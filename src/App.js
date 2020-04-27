@@ -3,8 +3,8 @@ import Glitch from './component/Glitch'
 
 function App() {
   return (
-    <div >
-      <Glitch name='Santiago'/>
+    <div className="glitch" data-text="Santiago Alfredo González Mancilla">
+      <Glitch name='Santiago Alfredo González Mancilla'/>
     </div>
   );
 }

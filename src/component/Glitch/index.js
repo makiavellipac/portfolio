@@ -1,8 +1,9 @@
 import React from 'react'
+import './index.css'
 
 const Glitch =(props) =>(
-    <div>
+    <>
         {props.name}
-    </div>
+    </>
 )
 export default Glitch
