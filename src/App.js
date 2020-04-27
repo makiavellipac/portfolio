@@ -1,10 +1,10 @@
 import React from 'react';
-
+import Glitch from './component/Glitch'
 
 function App() {
   return (
     <div >
-      Portfolio
+      <Glitch name='Santiago'/>
     </div>
   );
 }
