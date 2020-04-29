@@ -1,6 +1,7 @@
 import React from 'react';
 import Glitch from './component/Glitch'
 import TypeWriter from './component/TypeWriter'
+import RandomText from './component/RandomText'
 
 
 
@@ -13,10 +14,9 @@ function App() {
   ]
   return (
     <>  
-      <div className="glitch" data-text="Santiago AGM">
       <Glitch name='Santiago AGM'/>
-      </div>
       <TypeWriter perfil={perfil}/>
+      <RandomText name='Portafolio'/>
     </>
   );
 }
