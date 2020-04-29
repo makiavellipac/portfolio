@@ -1,0 +1,29 @@
+.Tipewriter{
+    position: relative;
+}
+.Tipewriter_wraper{
+    color: #fff;
+}
+
+.Tipewriter_cursor{
+    color: #eb83f8;
+    animation: Typewriter-cursor 1s infinite;
+}
+
+.Tipewriter_wraper,.Tipewriter_cursor{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+@keyframes  Typewriter-cursor{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
