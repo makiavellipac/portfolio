@@ -1,0 +1,11 @@
+.RandomText{
+    position: relative;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.random-text{
+    display: block;
+}
