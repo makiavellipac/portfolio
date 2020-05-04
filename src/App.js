@@ -1,23 +1,19 @@
 import React from 'react';
-import Glitch from './component/Glitch'
-import TypeWriter from './component/TypeWriter'
-import RandomText from './component/RandomText'
+import Navbar from './component/NavBar'
+import Home from './pages/Home'
+import './index.css'
 
 
 
 function App() {
-  const perfil=[
-    "Full Stack Web Developer",
-    "MERN Stack",
-    "MEAN Stack",
-    "Ing. Ciencias De La Computación"
-  ]
+  
   return (
-    <>  
-      <Glitch name='Santiago AGM'/>
-      <TypeWriter perfil={perfil}/>
-      <RandomText name='Portafolio'/>
-    </>
+    <div id="portfolio">
+      <div style={{outline:'none'}} tabIndex='-1' id='portfolio-focus-wraper'>
+        <Navbar/>
+        <Home/>
+      </div>      
+    </div>
   );
 }
 

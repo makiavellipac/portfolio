@@ -1,6 +1,14 @@
 .Tipewriter{
     position: relative;
 }
+
+.Tipewriter span{
+    color:#fff;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+}
 .Tipewriter_wraper{
     color: #fff;
 }
@@ -11,10 +19,21 @@
 }
 
 .Tipewriter_wraper,.Tipewriter_cursor{
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
+@media (max-width: 1024px){
+    .Tipewriter span{
+        font-size: 20px;
+    }
+}
+@media (max-width: 991px){
+    .Tipewriter_wraper,.Tipewriter_cursor{
+        font-size: 20px;
+    }
+}
+
 
 @keyframes  Typewriter-cursor{
     0% {
