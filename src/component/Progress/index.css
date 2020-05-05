@@ -1,3 +1,28 @@
+.progress-container{
+    margin-bottom: 25px;
+}
+
+.progress-container .value{
+    float: right;
+}
+
+.progress-container .value span {
+    font-family: Poppins;
+}
+
+.progress-container .name, .progress-container .value{
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.progress-container .progress {
+    height: 10px;
+    margin-top: 10px;
+    transition: 2s;
+    background-color: #fff;
+}
+
 .progress{
     height: 10px;
     margin-top: 10px;
