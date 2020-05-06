@@ -15,7 +15,7 @@ const Skills = ()=>{
                 <Progress name="Node Js"  value="60"/>
                 <Progress name="Express"  value="90"/>
                 <Progress name="Mongo Db"  value="60"/>
-                <Progress name="My Sql"  value="50"/>
+                <Progress name="MySQL"  value="50"/>
                 <Progress name="JavaScript"  value="95"/>
                 <Progress name="Java"  value="75"/>
                 <Progress name="Phyton"  value="35"/>
