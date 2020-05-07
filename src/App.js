@@ -3,6 +3,7 @@ import Navbar from './component/NavBar'
 import Home from './pages/Home'
 import AboutMe from './pages/AboutMe'
 import Services from './pages/Services'
+import Portfolio from './pages/Portfolio'
 import './index.css'
 
 
@@ -16,6 +17,7 @@ function App() {
         <Home/>
         <AboutMe/>
         <Services/>
+        <Portfolio/>
       </div>      
     </div>
   );
