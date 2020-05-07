@@ -1,15 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Category from '../../component/Category'
 import './index.css'
 
 const PortfolioSelector=()=>{
+    const [classes1,setClasses1]=useState('active');
+    const [classes2,setClasses2]=useState('');
+    const [classes3,setClasses3]=useState('');
+    const [classes4,setClasses4]=useState('');
+    const [classes5,setClasses5]=useState('');
+    const setClass=()=>{
+            setClasses1('active')
+            setClasses2('')
+            setClasses3('')
+            setClasses4('')
+            setClasses5('')
+    }
+    const setClass2=()=>{
+        setClasses1('')
+        setClasses2('active')
+        setClasses3('')
+        setClasses4('')
+        setClasses5('')
+    }
+    const setClass3=()=>{
+        setClasses1('')
+        setClasses2('')
+        setClasses3('active')
+        setClasses4('')
+        setClasses5('')
+    }
+    const setClass4=()=>{
+        setClasses1('')
+        setClasses2('')
+        setClasses3('')
+        setClasses4('active')
+        setClasses5('')
+    }
+    const setClass5=()=>{
+        setClasses1('')
+        setClasses2('')
+        setClasses3('')
+        setClasses4('')
+        setClasses5('active')
+    }
     return(
         <div className="portfolio_selector">
-            <Category name="Todos" classes="active"/>
-            <Category name="JavaScript" />
-            <Category name="React" />
-            <Category name="NodeJs"/>
-            <Category name="Express"/>
+            <Category name="Todos" classes={classes1} onClick={setClass} />
+            <Category name="JavaScript" classes={classes2} onClick={setClass2} />
+            <Category name="React" classes={classes3} onClick={setClass3} />
+            <Category name="NodeJs" classes={classes4} onClick={setClass4} />
+            <Category name="Express" classes={classes5} onClick={setClass5} />
         </div>
     )
 }
