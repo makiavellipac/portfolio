@@ -10,6 +10,7 @@
     padding: 0;
 }
 .portfolio .row .side {
+    width: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -32,6 +33,7 @@
     letter-spacing: 10px;
 }
 .portfolio .row .recent-works{
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -72,12 +74,50 @@
     transition: all .3s ease;
     transform: scaleX(0);
 }
+.portfolio .row .recent-works .portfolio_container{
+    margin-top: 55px;    
+}
+.portfolio .row .recent-works .portfolio_container .portfolio_item{
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 0 5px;
+    position: relative; 
+    
+}
+.portfolio .row .recent-works .portfolio_container .portfolio_item img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.portfolio .row .recent-works .portfolio_container .portfolio_item .description {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 2%;
+}
+.portfolio .row .recent-works .portfolio_container .portfolio_item .description p{
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+.portfolio .row .recent-works .portfolio_container .portfolio_item .description .tag-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio .row .recent-works .portfolio_container .portfolio_item .description .tag-container .tag{
+    background-color: #eb83f8;
+    margin: 2px;
+    padding: 3px;
+    border-radius: 15%;
+}
 .col-md-10{
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
 }
+
 
 :not(svg) {
     transform-origin: inherit;
@@ -120,6 +160,9 @@
     }
     .portfolio .row .recent-works .portfolio_selector .portfolio_category span{
         margin-right: 0;
+    }
+    .portfolio .row .recent-works .portfolio_container .portfolio_item img{
+        width: 100%;
     }
 }
 

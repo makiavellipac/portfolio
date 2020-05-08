@@ -1,0 +1,30 @@
+.project{
+    display: flex;
+}
+.animated{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.fadeIn{
+    animation-name: fadeIn;
+}
+@media (max-width:991px){
+    .project{
+        display: inline;
+    }
+}
+.social-tag,.tags{
+    display: flex;
+}
+.social-tag a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
