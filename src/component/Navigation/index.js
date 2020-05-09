@@ -19,7 +19,9 @@ const Navigation =({classes}) =>(
                 <li>
                     <Link to="portafolio" smooth="true" duration={1000}>Portafolio</Link>
                 </li>
-                <li><button>Contacto</button></li>
+                <li>
+                    <Link to="contact" smooth="true" duration={1000}>Contacto</Link>
+                </li>
             </ul>
         </div>
     </div>
