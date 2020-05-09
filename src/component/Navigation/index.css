@@ -1,0 +1,91 @@
+.navigation{
+    position: fixed;
+    width: 25%;
+    z-index: 1000;
+    background-color: #000;
+    height: 100%;
+    border-right: 1px solid #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+    margin: 50px auto;
+    max-width: 50%;
+}
+.navigation.active {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 1000;
+    visibility: visible;
+}
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+.navigation .closeNav:hover {
+    color: #fff;
+}
+.navigation .closeNav {
+    color: #eb83f8;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .1s;
+}
+.svg-inline--fa.fa-w-11 {
+    width: 0.6875em;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+:not(svg) {
+    transform-origin: inherit;
+}
+.navigation ul {
+    padding: 0;
+}
+.navigation ul li {
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    padding-bottom: 5px;
+    position: relative;
+}
+.navigation ul li button {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+.navigation ul li:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+    background-color: #eb83f8;
+    transition: all .3s ease;
+    transform: scaleX(0);
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:500px){
+    .navigation{
+        width: 100%;
+    }
+}

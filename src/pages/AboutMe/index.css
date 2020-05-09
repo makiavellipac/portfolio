@@ -1,0 +1,89 @@
+.about{
+    background-color: #000;
+    position: relative;
+}
+
+.about .row{
+    display: flex;
+    flex-wrap: inherit;
+    overflow: hidden;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    padding: 0;
+}
+
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.about .row .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.about .row .content h3{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin: 10px 0 20px;
+    line-height: 40px;
+    font-weight: 800;
+
+}
+
+.about .row .content p{
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: 300;
+
+}
+p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin: 0 0 10px;
+}
+
+.about .row .content .social_icons .social_icon {
+    font-size: 15px;
+    color: #fff;
+    margin-right: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.about .row .skills{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+    background-color: #251170;
+
+}
+.about .row .skills .skills-container {
+    max-width: 100%;
+}
+
+@media (max-width:991px){
+    .about .row{
+        flex-wrap: wrap;
+        position: inherit;
+    }
+    .about .row .content h3{
+        font-size: 30px;
+        line-height: 30px;    
+    }
+    .about .row .skills{
+        width: 100%;
+    
+    }
+    .about .row .skills .skills-container {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}

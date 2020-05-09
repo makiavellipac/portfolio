@@ -1,0 +1,13 @@
+.col-md-4{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width:992px){
+    .col-md-4{
+        width: 33.33%;
+        float: left;
+    }
+}

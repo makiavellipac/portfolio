@@ -1,0 +1,29 @@
+.opener {
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    z-index: 50;
+}
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.opener svg {
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    transition: .1s;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
