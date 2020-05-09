@@ -11,6 +11,7 @@ const Home = ()=>{
       ]
 
     return(
+    
         <section id="home" className="firstSection" style={{height:"auto"}}>
             <div className="row">
                 <div className="content col-md-6">
@@ -20,11 +21,11 @@ const Home = ()=>{
                         </div>
                         <Glitch name="Santiago AGM"/>
                         <TypeWriter perfil={perfil}/>
-                        <button className="hover-button">
+                        <a className="hover-button" href="http://localhost:3000/download_cv" rel="noopener noreferrer" target="_blank">
                             <span>
                                 Descargar CV
                             </span>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div className="img col-md-6">

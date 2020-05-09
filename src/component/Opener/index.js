@@ -1,8 +1,14 @@
 import React from 'react'
 import './index.css'
 
-const Opener =() =>(
-    <div className="opener">
+
+
+const Opener =({onClick}) =>{
+    
+    return(
+        
+    <div className="opener"
+         onClick={onClick}>
         <svg
             aria-hidden="true" 
             focusable="false"
@@ -16,4 +22,5 @@ const Opener =() =>(
         </svg>
     </div>
 )
+}
 export default Opener

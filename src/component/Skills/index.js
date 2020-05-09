@@ -9,18 +9,18 @@ const Skills = ()=>{
                 <h4>Mis Habilidades</h4>            
             </div>
             <div className="skills-container">
-                <Progress name="React"  value="90"/>
-                <Progress name="Angular"  value="40"/>
-                <Progress name="Vue"  value="20"/>
-                <Progress name="Node Js"  value="60"/>
-                <Progress name="Express"  value="90"/>
-                <Progress name="Mongo Db"  value="60"/>
-                <Progress name="MySQL"  value="50"/>
-                <Progress name="JavaScript"  value="95"/>
-                <Progress name="Java"  value="75"/>
-                <Progress name="Phyton"  value="35"/>
-                <Progress name="Php"  value="25"/>
-                <Progress name="Css"  value="50"/>
+                <Progress name="React"  value="90" aos="fade-left"/>
+                <Progress name="Angular"  value="40" aos="fade-right"/>
+                <Progress name="Vue"  value="20" aos="flip-left"/>
+                <Progress name="Node Js"  value="60" aos="flip-right"/>
+                <Progress name="Express"  value="90" aos="fade-left"/>
+                <Progress name="Mongo Db"  value="60" aos="fade-right"/>
+                <Progress name="MySQL"  value="50" aos="flip-left"/>
+                <Progress name="JavaScript"  value="95" aos="flip-right"/>
+                <Progress name="Java"  value="75" aos="fade-left"/>
+                <Progress name="Phyton"  value="35" aos="fade-right"/>
+                <Progress name="Php"  value="25" aos="flip-left"/>
+                <Progress name="Css"  value="50" aos="flip-right"/>
             </div>
         </div>
     )

@@ -107,6 +107,7 @@ h4:after{
     font-family: verdana;
     letter-spacing: 4px;
     border: none;
+    cursor: pointer;
 }
 
 

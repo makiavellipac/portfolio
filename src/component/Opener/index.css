@@ -1,29 +1,29 @@
-.opener{
+.opener {
     position: fixed;
     left: 5px;
     top: 5px;
     z-index: 50;
 }
-svg:not(:root).svg-inline--fa{
+svg:not(:root).svg-inline--fa {
     overflow: visible;
 }
-:not(svg){
-    transform-origin: 0px 0px;
-}
 
-.svg-inline--fa .fa-w-14{
+.svg-inline--fa.fa-w-14 {
     width: 0.875em;
 }
-
-.opener svg{
+svg:not(:root) {
+    overflow: hidden;
+}
+.opener svg {
     color: #fff;
     font-size: 40px;
     cursor: pointer;
-    transition: .1s
+    transition: .1s;
 }
-
-.svg-inline--fa{
+.svg-inline--fa {
     display: inline-block;
+    font-size: inherit;
     height: 1em;
+    overflow: visible;
     vertical-align: -0.125em;
 }

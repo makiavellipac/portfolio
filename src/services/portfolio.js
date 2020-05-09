@@ -15,6 +15,9 @@ const PORTFOLIO_SERVICE={
     },
     getAllType:async(Type)=>{
         return await MY_SERVICE.get(`/getDataType=${Type}`)
+    },
+    getCv:async()=>{
+        return await MY_SERVICE.get('download_cv')
     }
 }
 export default PORTFOLIO_SERVICE;

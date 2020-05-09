@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Category from '../../component/Category'
 import './index.css'
 
-const PortfolioSelector=()=>{
+const PortfolioSelector=({functions})=>{
     const [classes1,setClasses1]=useState('active');
     const [classes2,setClasses2]=useState('');
     const [classes3,setClasses3]=useState('');
@@ -14,6 +14,7 @@ const PortfolioSelector=()=>{
             setClasses3('')
             setClasses4('')
             setClasses5('')
+            functions.allData()
     }
     const setClass2=()=>{
         setClasses1('')
@@ -21,6 +22,7 @@ const PortfolioSelector=()=>{
         setClasses3('')
         setClasses4('')
         setClasses5('')
+        functions.JavaData()
     }
     const setClass3=()=>{
         setClasses1('')
@@ -28,6 +30,7 @@ const PortfolioSelector=()=>{
         setClasses3('active')
         setClasses4('')
         setClasses5('')
+        functions.ReactData()
     }
     const setClass4=()=>{
         setClasses1('')
@@ -35,6 +38,7 @@ const PortfolioSelector=()=>{
         setClasses3('')
         setClasses4('active')
         setClasses5('')
+        functions.NodeData()
     }
     const setClass5=()=>{
         setClasses1('')
@@ -42,6 +46,7 @@ const PortfolioSelector=()=>{
         setClasses3('')
         setClasses4('')
         setClasses5('active')
+        functions.ExpressData()
     }
     return(
         <div className="portfolio_selector">

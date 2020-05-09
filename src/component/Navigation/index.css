@@ -4,18 +4,27 @@
     z-index: 1000;
     background-color: #000;
     height: 100%;
-    border-right: 2px solid #fff;
+    border-right: 1px solid #fff;
     transform: translateX(-100%);
     opacity: 0;
     transition: .5s;
     visibility: hidden;
-    max-width: 100px;
     margin: 50px auto;
+    max-width: 50%;
 }
-.navigation .closeNav:hover{
+.navigation.active {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 1000;
+    visibility: visible;
+}
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+.navigation .closeNav:hover {
     color: #fff;
 }
-.navigation .closeNav{
+.navigation .closeNav {
     color: #eb83f8;
     position: absolute;
     right: 20px;
@@ -24,10 +33,25 @@
     cursor: pointer;
     transition: .1s;
 }
-.navigation ul{
+.svg-inline--fa.fa-w-11 {
+    width: 0.6875em;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+:not(svg) {
+    transform-origin: inherit;
+}
+.navigation ul {
     padding: 0;
 }
-.navigation ul li{
+.navigation ul li {
     font-size: 20px;
     margin: 20px 0;
     text-align: center;
@@ -36,12 +60,12 @@
     padding-bottom: 5px;
     position: relative;
 }
-.navigation ul li button{
+.navigation ul li button {
     color: #fff;
     background-color: transparent;
     border: none;
 }
-.navigation ul li:after{
+.navigation ul li:after {
     content: "";
     position: absolute;
     height: 2px;
@@ -50,38 +74,13 @@
     bottom: 0;
     visibility: hidden;
     background-color: #eb83f8;
-    transition: all .3s;
+    transition: all .3s ease;
     transform: scaleX(0);
 }
-button,input,select,textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-button,select{
-    overflow: visible;
-}
-button,input,optgroup,select,textarea{
-    margin: 0;
-    font: inherit;
-}
-ol,ul{
+
+ol, ul {
     margin-top: 0;
     margin-bottom: 10px;
-}
-ul{
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-
-.svg-inline--fa .fa-w-11{
-    width: 0.6875em;
 }
 
 

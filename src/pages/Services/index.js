@@ -23,7 +23,7 @@ const Services=()=>{
                            <div className="container">
                                <div className="row">
                                    <Service
-                                       animated="fadeInLeft"
+                                       animated="fade-left"
                                        children={<IconReact/>}
                                        name="React"
                                        description="React es una biblioteca Javascript desarrollada por Facebook de código 
@@ -31,14 +31,14 @@ const Services=()=>{
                                                     facilitar el desarrollo de aplicaciones en una sola página."/>
                                    <Service
                                        classes="border-side" 
-                                       animated="fadeInDown"
+                                       animated="fade-down"
                                        children={<IconAngular/>}
                                        name="Angular"
                                        description="Angular es un framework JavaScript, gratuito y Open Source, creado por 
                                                     Google y destinado a facilitar la creación de aplicaciones web modernas
                                                      de tipo SPA (Single Page Application)."/>
                                     <Service
-                                       animated="fadeInRight"
+                                       animated="fade-right"
                                        children={<IconBackend/>}
                                        name="Express Back-End"
                                        description="Un programador backend es aquel que trabaja la arquitectura interna de 
@@ -46,7 +46,7 @@ const Services=()=>{
                                                     (formularios, mapas, bases de datos, etc.) que se integrará con todo lo 
                                                     que ve el usuario final en una web o aplicación móvil"/>
                                     <Service
-                                       animated="fadeInRight"
+                                       animated="fade-right"
                                        children={<IconNode/>}
                                        name="Node Js"
                                        description="Node.js es un entorno de tiempo de ejecución de JavaScript. Este entorno
@@ -54,14 +54,14 @@ const Services=()=>{
                                                      para ejecutar un programa escrito en JavaScript."/>
                                     <Service
                                        classes="border-side"
-                                       animated="fadeInUp"
+                                       animated="fade-up"
                                        children={<IconJava/>}
                                        name="JavaScript"
                                        description="JavaScript es un lenguaje de programación que puede ser usado en cualquier
                                                      tipo de navegadores. Permite, entre otras cosas, crear contenido dinámico 
                                                      e imágenes animadas y controlar archivos multimedia."/>
                                     <Service
-                                       animated="fadeInLeft"
+                                       animated="fade-left"
                                        children={<IconApi/>}
                                        name="API"
                                        description="La API define la forma correcta para que un desarrollador escriba un programa 

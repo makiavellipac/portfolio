@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import './index.css'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const RandomText =(props) =>{
+
     const [caracters,setCaracters]=useState('');
     const [frames,setFrames]=useState(0);
     const [isActive,setisActive]=useState(true);
@@ -28,6 +30,7 @@ const RandomText =(props) =>{
 
     useEffect(()=>{
         let interval=null;
+        Aos.init({duration:1000});
         if(isActive){
             interval=setInterval(()=>{
                 setFrames(frames+1);
@@ -51,8 +54,8 @@ const RandomText =(props) =>{
     },[caracters,frames,isActive,position,size,cadena,final_text])
 
     return(
-        <div className="RandomText">
-            <span className="random-text">
+        <div className="RandomText" >
+            <span className="random-text" data-aos="zoom-out-up">
                 <span>{caracters}</span>
             </span>
         </div>

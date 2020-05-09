@@ -5,77 +5,9 @@
     padding-left: 15px;
 }
 
-.animated.fast{
-    animation-duration: .8s;
-}
-
-.animated{
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-.fadeInLeft{
-    animation-name: fadeInLeft;
-}
-
-.fadeInDown{
-    animation-name: fadeInDown;
-}
-
-.fadeInRight{
-    animation-name: fadeInRight;
-}
-
-.fadeInUp{
-    animation-name: fadeInUp;
-}
 @media (min-width:992px){
     .col-md-4{
         width: 33.33%;
         float: left;
-    }
-}
-
-@keyframes fadeInLeft{
-    0%{
-        opacity: 0;
-        transform:translate3d(-100%,0,0);
-    }
-    100%{
-        opacity: 1;
-        transform: translateZ(0);
-    }
-}
-
-@keyframes fadeInDown{
-    0%{
-        opacity: 0;
-        transform:translate3d(0,-100%,0);
-    }
-    100%{
-        opacity: 1;
-        transform: translateZ(0);
-    }
-}
-
-@keyframes fadeInRight{
-    0%{
-        opacity: 0;
-        transform:translate3d(100%,0,0);
-    }
-    100%{
-        opacity: 1;
-        transform: translateZ(0);
-    }
-}
-
-@keyframes fadeInUp{
-    0%{
-        opacity: 0;
-        transform:translate3d(0,100%,0);
-    }
-    100%{
-        opacity: 1;
-        transform: translateZ(0);
     }
 }
