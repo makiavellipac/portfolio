@@ -1,0 +1,19 @@
+.row.bottom{
+    padding: 30px;
+    min-height: 150px;
+    background-color: #251170;
+}
+
+.row.bottom .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 991px){
+    .row.bottom .container {
+        display: block;
+    }
+}
+
+

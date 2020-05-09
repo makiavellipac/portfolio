@@ -1,0 +1,9 @@
+.contact{
+    background-color: #000;
+}
+
+@media (max-width: 991px){
+    .contact {
+        margin-top: 40px;
+    }
+}
